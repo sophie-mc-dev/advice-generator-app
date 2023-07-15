@@ -10,7 +10,7 @@ async function getAdvice() {
     .then((adviceData) => {
       const adviceObj = adviceData.slip;
       adviceID.innerHTML = adviceObj.id;
-      advice.innerHTML = adviceObj.advice;
+      advice.innerHTML = "\"" + adviceObj.advice + "\"" ;
     })
     .catch((error) => {
       console.log(error);
